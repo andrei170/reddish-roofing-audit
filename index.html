@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Reddish Roofing - Digital Presence Audit</title>
+<style>
+  :root{
+    --bg:#0d1117; --panel:#161b22; --ink:#e6edf3; --mut:#9aa7b4; --line:#2a3340; --accent:#2f81f7;
+    --good:#3fb950; --gradF:#f85149; --gradD:#e8702a; --gradC:#d29922; --gradB:#3fb950; --gradA:#2ea043;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+  .eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;color:var(--mut);font-weight:600}
+  header{padding:46px 0 28px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 400px at 70% -10%,rgba(248,81,73,.16),transparent)}
+  h1{font-size:30px;font-weight:800;margin:10px 0 6px}
+  .sub{color:var(--mut);font-size:15px}
+  .hero{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;margin:34px 0 8px}
+  @media(max-width:760px){.hero{grid-template-columns:1fr}}
+  .gradecard{background:linear-gradient(160deg,#2e1414,#1c2330);border:1px solid var(--line);border-radius:18px;padding:26px;text-align:center}
+  .bigletter{font-size:96px;font-weight:900;line-height:1;color:var(--gradF);text-shadow:0 0 40px rgba(248,81,73,.35)}
+  .score100{font-size:18px;color:var(--mut);margin-top:6px}
+  .heroread h2{font-size:21px;font-weight:800;margin-bottom:10px}
+  .heroread p{color:var(--mut);font-size:15.5px}
+  .heroread p + p{margin-top:10px}
+  .heroread .tag{display:inline-block;margin-top:14px;padding:6px 12px;border:1px solid var(--line);border-radius:999px;font-size:13px;background:var(--panel)}
+  section{padding:34px 0;border-bottom:1px solid var(--line)}
+  .h{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.14em;font-weight:700;margin-bottom:18px}
+  .flagbox{background:linear-gradient(160deg,#2e1414,#1c2330);border:1px solid #8a3128;border-radius:16px;padding:24px}
+  .flagbox h3{font-size:18px;font-weight:800;color:#ff8d85;margin-bottom:10px}
+  .flagbox p{color:var(--mut);font-size:14.5px}
+  .flagbox p + p{margin-top:10px}
+  .flagbox.blue{background:linear-gradient(160deg,#12233a,#1c2330);border-color:#2b5c8a}
+  .flagbox.blue h3{color:#79b8f3}
+  .flagbox.gold{background:linear-gradient(160deg,#2a2410,#1c2330);border-color:#7a5e2b}
+  .flagbox.gold h3{color:#e3bb4d}
+  .flagbox.green{background:linear-gradient(160deg,#0f2417,#1c2330);border-color:#1f6f3a}
+  .flagbox.green h3{color:#5ddb7d}
+  .flagbox + .flagbox{margin-top:14px}
+  .ev{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:18px}
+  @media(max-width:820px){.ev{grid-template-columns:1fr}}
+  .evc{background:#0b0f15;border:1px solid var(--line);border-radius:10px;padding:14px}
+  .evc .k{font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);font-weight:700}
+  .evc .v{font-size:15px;margin-top:6px;color:var(--ink);font-weight:600}
+  .evc .n{font-size:12.5px;color:var(--mut);margin-top:5px}
+  .code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;color:#f0a279;background:#0b0f15;border:1px solid var(--line);border-radius:6px;padding:2px 7px;display:inline-block}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media(max-width:760px){.grid{grid-template-columns:1fr}}
+  .row{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+  .rname{font-weight:600;font-size:15px}
+  .bar{height:7px;background:#0b0f15;border-radius:99px;margin-top:9px;overflow:hidden}
+  .fill{height:100%;border-radius:99px}
+  .badge{font-weight:800;font-size:15px;min-width:46px;height:46px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#0d1117}
+  .gF{background:var(--gradF)}.gD{background:var(--gradD)}.gC{background:var(--gradC)}.gB{background:var(--gradB);color:#06210f}.gA{background:var(--gradA);color:#06210f}
+  .sc{font-size:12px;color:var(--mut);margin-top:3px}
+  .opp{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  @media(max-width:760px){.opp{grid-template-columns:1fr}}
+  .ocard{background:linear-gradient(160deg,#0f2417,#161b22);border:1px solid #1f6f3a;border-radius:14px;padding:20px;text-align:center}
+  .ocard.warn{background:linear-gradient(160deg,#2e1a14,#161b22);border-color:#7a3f2b}
+  .ocard .lab{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--mut)}
+  .ocard .big{font-size:30px;font-weight:900;color:var(--good);margin:8px 0 2px}
+  .ocard.warn .big{color:var(--gradF)}
+  .ocard .small{font-size:13px;color:var(--mut)}
+  .oppnote{color:var(--mut);font-size:14px;margin-top:14px}
+  .arrow{display:flex;align-items:center;justify-content:center;gap:18px;margin:6px 0 2px;flex-wrap:wrap}
+  .pill{font-size:60px;font-weight:900;line-height:1}
+  .pill.from{color:var(--gradF)} .pill.to{color:var(--gradA)}
+  .pilllab{font-size:12px;color:var(--mut);text-align:center;text-transform:uppercase;letter-spacing:.1em}
+  .ar{font-size:34px;color:var(--mut)}
+  ul.road{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  @media(max-width:760px){ul.road{grid-template-columns:1fr}}
+  ul.road li{background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:8px;padding:11px 14px;font-size:14.5px}
+  .road2 li{border-left-color:var(--good)}
+  .cta{text-align:center;padding:40px 0 56px}
+  .cta h2{font-size:22px;font-weight:800;margin-bottom:8px}
+  .cta p{color:var(--mut);font-size:15px}
+  footer{color:var(--mut);font-size:12.5px;text-align:center;padding:22px 0 40px}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Digital Presence Audit</div>
+    <h1>Reddish Roofing</h1>
+    <div class="sub">12 Margate Rd, Stockport SK5 6TH &nbsp;·&nbsp; Roofing across Greater Manchester</div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="hero">
+    <div class="gradecard">
+      <div class="eyebrow">Overall Grade</div>
+      <div class="bigletter">F</div>
+      <div class="score100">32 / 100</div>
+    </div>
+    <div class="heroread">
+      <h2>A decent website with nothing measuring it, nothing proving it, and links that go nowhere.</h2>
+      <p>The site itself is reasonable. Seven proper service pages, a finance option, a clear Stockport and Greater Manchester focus, and copy that reads like a roofer wrote it rather than a template.</p>
+      <p>Underneath, three things are wrong. There is <b>no tracking of any kind</b>, so nothing that happens on the site is measurable. There is <b>not a single review or accreditation anywhere on it</b>. And several navigation links still point at <b>unconfigured theme demo pages</b> with raw page IDs in the address.</p>
+      <span class="tag">0 tracking tags &nbsp;•&nbsp; 0 reviews shown &nbsp;•&nbsp; 3 broken nav links</span>
+    </div>
+  </div>
+
+  <section>
+    <div class="h">The Finding That Matters Most</div>
+    <div class="flagbox">
+      <h3>Nothing on the site measures anything.</h3>
+      <p>Checked across the site source: <b>no Google Analytics, no Tag Manager, no Google Ads conversion tag, no Meta pixel.</b> Not one measurement tag.</p>
+      <p>There are two working enquiry forms on the site, and no record anywhere of how many people fill them in, how many arrive, or where they came from. Every decision about marketing spend is currently a guess, and there is no baseline to judge any change against.</p>
+      <div class="ev">
+        <div class="evc"><div class="k">Analytics</div><div class="v">None installed</div><div class="n">no visitor data at all</div></div>
+        <div class="evc"><div class="k">Ads conversion tag</div><div class="v">None installed</div><div class="n">no way to measure a paid lead</div></div>
+        <div class="evc"><div class="k">Meta pixel</div><div class="v">None installed</div><div class="n">no retargeting possible</div></div>
+      </div>
+    </div>
+
+    <div class="flagbox blue">
+      <h3>Three navigation links still point at theme demo pages.</h3>
+      <p>The menu contains items pointing to <span class="code">?page_id=48</span>, <span class="code">?page_id=59</span> and <span class="code">/project-02-columns/</span>. Those are leftover pages from the website template, never removed and never renamed, and two of them show raw page numbers instead of a proper address.</p>
+      <p>Two more are simply wrong: <b>Privacy Policy points at the contact page</b>, and <b>Terms and Conditions points at the about page</b>. Neither document appears to exist.</p>
+      <p>None of it stops the phone ringing. All of it tells anyone who looks closely that nobody has been through the site properly since it went up.</p>
+    </div>
+
+    <div class="flagbox gold">
+      <h3>Not one review or accreditation appears anywhere on the site.</h3>
+      <p>The whole site was searched for the things homeowners look for: <b>Checkatrade, TrustATrader, Trustpilot, Google reviews, NFRC, CompetentRoofer, TrustMark.</b> None of them appear. The only trust language is the words "Insured" and "Guaranteed", neither backed by anything a visitor can check.</p>
+      <p>Roofing is a trust purchase. Someone comparing three roofers picks the one they can verify, and right now there is nothing on this site to verify. Whatever reputation exists offline is doing no work online.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">Smaller Things That Add Up</div>
+    <div class="flagbox blue">
+      <h3>Four fixes that take an afternoon between them.</h3>
+      <p><b>The email address is a Hotmail account.</b> <span class="code">reddishroofing@hotmail.co.uk</span> is the contact address, on a business that already owns reddishroofing.co.uk. A matching address on your own domain costs almost nothing and reads very differently on a quote.</p>
+      <p><b>There is no landline.</b> A single mobile, 07950 398261, is the only number on the site. That is normal for a small firm, but it does mean there is no fallback when it is not answered, and no call tracking is possible on it as it stands.</p>
+      <p><b>Saturday is missing from the opening hours.</b> The site lists weekdays 8.30am to 6.00pm and Sunday closed. Saturday simply is not mentioned, so a homeowner with a weekend leak has no idea whether to ring.</p>
+      <p><b>The finance option is buried.</b> There is a finance page and a lender banner, but finance is not mentioned beside any service or price. For an unplanned roof bill, a monthly figure next to a total is one of the strongest levers available, and right now the total is the only number anyone sees.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">The Scorecard - 12 Categories</div>
+    <div class="grid">
+      <div class="row"><div><div class="rname">Service Page Coverage</div><div class="bar"><div class="fill" style="width:76%;background:var(--gradB)"></div></div><div class="sc">Seven proper service pages, each with its own content</div></div><div class="badge gB">B</div></div>
+      <div class="row"><div><div class="rname">Copywriting</div><div class="bar"><div class="fill" style="width:66%;background:var(--gradB)"></div></div><div class="sc">Reads naturally, names Stockport and Greater Manchester specifically</div></div><div class="badge gB">B-</div></div>
+      <div class="row"><div><div class="rname">Lead Capture Forms</div><div class="bar"><div class="fill" style="width:58%;background:var(--gradC)"></div></div><div class="sc">Two working forms present, though not in the hero</div></div><div class="badge gC">C+</div></div>
+      <div class="row"><div><div class="rname">Analytics &amp; Tracking</div><div class="bar"><div class="fill" style="width:2%;background:var(--gradF)"></div></div><div class="sc">No GA, GTM, Ads conversion tag or Meta pixel anywhere</div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Reviews On Site</div><div class="bar"><div class="fill" style="width:3%;background:var(--gradF)"></div></div><div class="sc">Zero reviews, ratings or testimonials shown anywhere</div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Accreditation</div><div class="bar"><div class="fill" style="width:5%;background:var(--gradF)"></div></div><div class="sc">No NFRC, CompetentRoofer or TrustMark shown on the site</div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Site Housekeeping</div><div class="bar"><div class="fill" style="width:16%;background:var(--gradF)"></div></div><div class="sc">Three demo links live, privacy and terms both point to wrong pages</div></div><div class="badge gF">F</div></div>
+      <div class="row"><div><div class="rname">Contact Credibility</div><div class="bar"><div class="fill" style="width:30%;background:var(--gradD)"></div></div><div class="sc">Hotmail address, mobile only, Saturday hours missing</div></div><div class="badge gD">D</div></div>
+      <div class="row"><div><div class="rname">Finance Offer Visibility</div><div class="bar"><div class="fill" style="width:26%;background:var(--gradD)"></div></div><div class="sc">Finance page exists but is never mentioned beside a service</div></div><div class="badge gD">D</div></div>
+      <div class="row"><div><div class="rname">Google Business Profile</div><div class="bar"><div class="fill" style="width:20%;background:var(--gradF)"></div></div><div class="sc">Not linked from the site — verify live before the call</div></div><div class="badge gF">D-</div></div>
+      <div class="row"><div><div class="rname">Local SEO Footprint</div><div class="bar"><div class="fill" style="width:22%;background:var(--gradF)"></div></div><div class="sc">One Stockport focus, no town pages for the wider Manchester area</div></div><div class="badge gF">D-</div></div>
+      <div class="row"><div><div class="rname">Claim Substantiation</div><div class="bar"><div class="fill" style="width:28%;background:var(--gradD)"></div></div><div class="sc">"Decades of experience" and "leading company" stated, nothing shown</div></div><div class="badge gD">D</div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="h">What the Numbers Say Today</div>
+    <div class="opp">
+      <div class="ocard"><div class="lab">Service pages built</div><div class="big">7</div><div class="small">more than most local competitors have</div></div>
+      <div class="ocard warn"><div class="lab">Reviews on the site</div><div class="big">0</div><div class="small">nothing a homeowner can verify</div></div>
+      <div class="ocard warn"><div class="lab">Tracking tags</div><div class="big">0</div><div class="small">no visitor or enquiry data at all</div></div>
+    </div>
+    <p class="oppnote">Seven service pages and two working forms is a real foundation. <b>What is missing is the proof in front of it and the measurement behind it</b> — and neither of those requires rebuilding anything.</p>
+  </section>
+
+  <section>
+    <div class="h">Projected Grade After Build</div>
+    <div class="arrow">
+      <div><div class="pill from">F</div><div class="pilllab">Today · 32/100</div></div>
+      <div class="ar">→</div>
+      <div><div class="pill to">A-</div><div class="pilllab">After build · 87-90/100</div></div>
+    </div>
+    <p class="oppnote" style="text-align:center">Most of this is housekeeping and plumbing, not a new website.</p>
+  </section>
+
+  <section>
+    <div class="h">Priority Roadmap - Fix This Week</div>
+    <ul class="road">
+      <li>Install analytics and conversion tracking before any spend begins</li>
+      <li>Remove the three theme demo pages from the navigation</li>
+      <li>Point Privacy Policy and Terms at real documents</li>
+      <li>Put reviews on the site — the single biggest missing element</li>
+      <li>Move to an email address on your own domain</li>
+      <li>Add Saturday to the opening hours</li>
+    </ul>
+    <div class="h" style="margin-top:24px">Build Next - Where The Growth Is</div>
+    <ul class="road road2">
+      <li>Claim and build out the Google Business Profile</li>
+      <li>A review request that goes out after every completed job</li>
+      <li>Surface finance beside each service, not on a page of its own</li>
+      <li>Town pages across Greater Manchester, not just Stockport</li>
+      <li>A quote form in the hero rather than further down</li>
+      <li>Accreditation — the fastest way to make "insured and guaranteed" checkable</li>
+    </ul>
+  </section>
+
+  <div class="cta">
+    <h2>The website is not the problem. What is missing around it is.</h2>
+    <p>Proof in front, measurement behind, and an afternoon of housekeeping in between.</p>
+  </div>
+
+</div>
+
+<footer>Prepared by Andrei Givero · AG1 Consulting &nbsp;|&nbsp; Site, tag and link status verified live 19 Aug 2026</footer>
+</body>
+</html>
