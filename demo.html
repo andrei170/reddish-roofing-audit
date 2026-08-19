@@ -124,6 +124,17 @@
   .placeholder p{font-size:15.5px;color:var(--grey);line-height:1.55}
   .placeholder p + p{margin-top:10px}
 
+  .revrow{display:grid;grid-template-columns:.32fr .68fr;gap:26px;align-items:start}
+  @media(max-width:900px){.revrow{grid-template-columns:1fr}}
+  .ratecard{background:#fff;border:1px solid var(--line-d);border-top:4px solid var(--brick);border-radius:5px;padding:30px 24px;text-align:center}
+  .ratecard .rn{font-family:var(--serif);font-size:66px;line-height:1;color:var(--ink)}
+  .ratecard .rs{color:var(--brick);font-size:19px;letter-spacing:3px;margin:8px 0 6px}
+  .ratecard .rl{font-size:14px;color:var(--grey)}
+  .revgrid{display:grid;gap:16px}
+  .rev{background:#fff;border:1px solid var(--line-d);border-left:3px solid var(--brick);border-radius:4px;padding:20px 22px}
+  .rev p{font-family:var(--serif);font-size:16px;line-height:1.55;color:var(--ink);margin-bottom:12px}
+  .rev .who{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--grey);font-weight:600}
+
   .gal{background:var(--deep);color:#fff}
   .gal .sechead .eyebrow{color:var(--brick)}
   .gal .sechead h2{color:#fff}
@@ -180,6 +191,7 @@
         <div class="cred">Family-run, <b>Stockport based</b></div>
         <div class="cred">Free roof inspections &amp; surveys</div>
         <div class="cred"><b>Finance</b> available</div>
+        <div class="cred"><b>4.4</b> from 46 Google reviews</div>
         <div class="cred">Emergency call-outs</div>
       </div>
     </div>
@@ -213,6 +225,7 @@
 
 <div class="trust">
   <div class="wrap trustin">
+    <div class="ti"><div class="n">4.4</div><div class="l">46 Google Reviews</div></div>
     <div class="ti"><div class="n">Local</div><div class="l">Family-Run, Stockport</div></div>
     <div class="ti"><div class="n">Free</div><div class="l">Surveys &amp; Inspections</div></div>
     <div class="ti"><div class="n">Finance</div><div class="l">Spread The Cost</div></div>
@@ -329,13 +342,29 @@
   <div class="wrap">
     <div class="sechead">
       <div class="eyebrow">What customers say</div>
-      <h2>This is the section you are missing.</h2>
+      <h2>Forty-six reviews on Google. None of them on your website.</h2>
+      <p>Every word below is copied exactly as the customer wrote it, from your own public Google profile. These already exist. They are simply not on the site where people are deciding whether to ring you.</p>
     </div>
-    <div class="placeholder">
-      <div class="pt">Deliberately left empty</div>
-      <p>There is not one review, rating or testimonial anywhere on your current website, so there is nothing here for us to put in — and we are not going to invent any.</p>
-      <p><b>This is the single biggest gap in the whole site.</b> Roofing is a trust purchase. Someone comparing three roofers picks the one they can verify, and right now there is nothing on your site to verify. Whatever reputation exists on the street is doing no work online at all.</p>
-      <p>The fix is a review request that goes out after every completed job, and a Google Business Profile to collect them on. Within a couple of months this block fills itself, and it becomes the most persuasive part of the page.</p>
+    <div class="revrow">
+      <div class="ratecard">
+        <div class="rn">4.4</div>
+        <div class="rs">★★★★★</div>
+        <div class="rl">from <b>46 Google reviews</b></div>
+      </div>
+      <div class="revgrid">
+        <div class="rev">
+          <p>"We have used Reddish Roofers on a few occasions, most recently for a complete new roof! They are a great crew, good at what they do, polite and respectful. Fabulous value for money and talked through any changes needed! I would highly recommend!"</p>
+          <span class="who">Alaina Cooling · Google</span>
+        </div>
+        <div class="rev">
+          <p>"Alan did an excellent job replacing the flat roof of our extension. Great price and great guy. Would definitely recommend them."</p>
+          <span class="who">Lyd Law · Google</span>
+        </div>
+        <div class="rev">
+          <p>"Alan and his team have done a fantastic job of our much needed roof replacement . Excellent price also. We are having a new extension and we will certainly be having Alan back and his team. Highly recommend."</p>
+          <span class="who">Debra Coyne · Google</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
