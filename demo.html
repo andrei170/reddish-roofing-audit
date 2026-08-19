@@ -119,10 +119,6 @@
   .pstep p{font-size:14px;color:var(--grey)}
 
   .proof{background:var(--paper);border-top:1px solid var(--line-d)}
-  .placeholder{border:2px dashed var(--line-d);border-radius:5px;padding:30px 28px;background:#fff;max-width:820px}
-  .placeholder .pt{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:800;color:var(--brick-d);margin-bottom:12px}
-  .placeholder p{font-size:15.5px;color:var(--grey);line-height:1.55}
-  .placeholder p + p{margin-top:10px}
 
   .revrow{display:grid;grid-template-columns:.32fr .68fr;gap:26px;align-items:start}
   @media(max-width:900px){.revrow{grid-template-columns:1fr}}
@@ -134,6 +130,19 @@
   .rev{background:#fff;border:1px solid var(--line-d);border-left:3px solid var(--brick);border-radius:4px;padding:20px 22px}
   .rev p{font-family:var(--serif);font-size:16px;line-height:1.55;color:var(--ink);margin-bottom:12px}
   .rev .who{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--grey);font-weight:600}
+
+  .emg{background:linear-gradient(120deg,#7f2a1d,#a63a2a);color:#fff}
+  .emgrid{display:grid;grid-template-columns:1.25fr .75fr;gap:44px;align-items:center}
+  @media(max-width:900px){.emgrid{grid-template-columns:1fr;gap:26px}}
+  .emgcall{background:rgba(0,0,0,.24);border:1px solid rgba(255,255,255,.22);border-radius:5px;padding:30px 24px;text-align:center}
+  .emgcall a{font-family:var(--serif);font-size:38px;color:#fff;text-decoration:none;display:block;line-height:1.1}
+  .emgcall a:hover{text-decoration:underline}
+  .emgcall span{display:block;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.68);font-weight:700;margin-top:12px}
+  .faq{display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+  @media(max-width:860px){.faq{grid-template-columns:1fr}}
+  .fq{padding:20px 0;border-top:1px solid var(--line-d)}
+  .fq b{display:block;font-size:17px;margin-bottom:6px}
+  .fq span{font-size:14.5px;color:var(--grey);line-height:1.5}
 
   .gal{background:var(--deep);color:#fff}
   .gal .sechead .eyebrow{color:var(--brick)}
@@ -373,7 +382,7 @@
   <div class="wrap">
     <div class="sechead center">
       <div class="eyebrow">Our work</div>
-      <h2>Five roofs we finished this year.</h2>
+      <h2>Six roofs we finished this year.</h2>
       <p>Every photograph here is our own work on real Greater Manchester houses. Nothing bought from a photo library.</p>
     </div>
     <div class="galgrid">
@@ -382,7 +391,39 @@
       <div class="gt" style="background-image:url('img/clay-hip.webp')"><span>Clay plain tile hip roof with lead valley</span></div>
       <div class="gt" style="background-image:url('img/gable-fascia.webp')"><span>New bargeboards and gable cladding</span></div>
       <div class="gt" style="background-image:url('img/whole-house.webp')"><span>Completed rear elevation, Stockport</span></div>
-      <div class="gt" style="background-image:linear-gradient(135deg,#a63a2a,#0f1214)"><span>More added after every job</span></div>
+      <div class="gt" style="background-image:url('img/ridge-tile.webp')"><span>New clay tile hip with dry ridge, Reddish</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="emg">
+  <div class="wrap emgrid">
+    <div>
+      <div class="eyebrow" style="color:#ffb4a6;margin-bottom:14px">Emergency call-outs</div>
+      <h2 style="color:#fff;font-size:36px;line-height:1.14;margin-bottom:14px">Water coming in right now?</h2>
+      <p style="font-size:16.5px;color:rgba(255,255,255,.84);margin-bottom:10px">Storm damage and sudden leaks do not wait for office hours. We make the roof safe and watertight first, take photographs for your insurer, and sort the permanent repair once the water has stopped.</p>
+      <p style="font-size:16.5px;color:rgba(255,255,255,.84)">If it is leaking, ring rather than fill in the form.</p>
+    </div>
+    <div class="emgcall">
+      <a href="tel:07950398261">07950 398261</a>
+      <span>Call Alan direct</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sechead">
+      <div class="eyebrow">Straight answers</div>
+      <h2>The questions everybody asks before they ring.</h2>
+    </div>
+    <div class="faq">
+      <div class="fq"><b>Do I need a whole new roof, or will a repair do?</b><span>Usually a repair, and we will say so. A roof that needs replacing tends to be losing tiles in more than one place, sagging between rafters, or leaking after every heavy rain rather than only in a storm. The free survey answers it properly, with photographs.</span></div>
+      <div class="fq"><b>How long does a re-roof take?</b><span>Most terraced and semi-detached roofs around Stockport take three to six days once the scaffold is up, depending on the covering and the weather. You will have the dates before anything is stripped.</span></div>
+      <div class="fq"><b>Is scaffolding included in the price?</b><span>Yes. It is in the written quote alongside materials and labour, so it is not something that appears afterwards as an extra.</span></div>
+      <div class="fq"><b>Will I have to move out?</b><span>No. The work is all outside. You will hear it, and there will be a skip and a scaffold for a few days, but you can carry on living in the house throughout.</span></div>
+      <div class="fq"><b>What about the mess?</b><span>Site cleared at the end of every day and the waste taken away at the end of the job. We walk the finished roof with you before we leave.</span></div>
+      <div class="fq"><b>Can I spread the cost?</b><span>Yes, finance is available on larger jobs. Ask when we quote and we will show you the monthly figure next to the total.</span></div>
     </div>
   </div>
 </section>
